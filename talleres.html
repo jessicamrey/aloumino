@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Talleres y experiencias · Aloumiño</title>
+  <meta name="description" content="Talleres creativos de velas artesanales en Galicia: crea tu propia vela, flores de cera y wax melts en grupos reducidos. Reserva tu plaza.">
+  <meta property="og:title" content="Talleres y experiencias · Aloumiño">
+  <meta property="og:image" content="assets/img/bouquet-flor.jpg">
+  <meta name="theme-color" content="#fdfbf7">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="talleres">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Talleres y experiencias</span>
+        <h1>Crea con tus manos, llévate tu luz</h1>
+        <p class="lead">Talleres creativos en grupos reducidos para aprender a hacer velas, desconectar un rato y volver a casa con algo hecho por ti.</p>
+        <div class="btn-row center" style="margin-top:2rem">
+          <a class="btn" href="#reserva">Reservar plaza</a>
+          <a class="btn btn--ghost" href="eventos.html">Talleres privados</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Nuestros talleres</span>
+          <h2>Elige tu experiencia</h2>
+          <p>Publicamos las próximas fechas en Instagram. Si te interesa alguno, déjanos tus datos y te avisamos o te reservamos plaza.</p>
+        </div>
+        <div class="cards">
+          <article class="card card--image reveal">
+            <img src="assets/img/vela-lavanda-mansina.jpg" alt="Vela aromática de vaso con tapa de madera" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Iniciación</span>
+              <h3>Tu vela aromática</h3>
+              <p>Aprende el proceso completo de una vela de vaso con cera de soja: elige el aroma, prepara la mecha, vierte y decora tu etiqueta.</p>
+              <a class="link-arrow" href="?taller=vela-aromatica#reserva">Me interesa</a>
+            </div>
+          </article>
+          <article class="card card--image reveal">
+            <img src="assets/img/ramo-colores.jpg" alt="Ramo de flores de cera en tonos lila, rosa y amarillo" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Creativo</span>
+              <h3>Flores y bouquets de cera</h3>
+              <p>Modela flores de cera pétalo a pétalo y compón tu propio bouquet, combinándolas con flor seca. Un taller precioso y muy relajante.</p>
+              <a class="link-arrow" href="?taller=bouquet#reserva">Me interesa</a>
+            </div>
+          </article>
+          <article class="card card--image reveal">
+            <img src="assets/img/wax-sachet.jpg" alt="Wax sachets decorados con lavanda y flores secas" loading="lazy">
+            <div class="card-content">
+              <span class="tag">Para todos</span>
+              <h3>Wax melts y sachets</h3>
+              <p>Crea wax melts y sachets aromáticos decorados con flores secas. Ideal para venir en familia, con amigas o como primera experiencia.</p>
+              <a class="link-arrow" href="?taller=wax#reserva">Me interesa</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--sage">
+      <div class="container split">
+        <div class="split-media reveal">
+          <img class="arch" src="assets/img/bouquet-flor.jpg" alt="Manos sujetando una flor de cera envuelta" loading="lazy">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Cómo funcionan</span>
+          <h2>Un rato para ti, sin prisas</h2>
+          <ul class="check-list">
+            <li>Grupos reducidos, para que tengas atención cercana en todo momento.</li>
+            <li>No necesitas experiencia: te acompañamos paso a paso.</li>
+            <li>Todos los materiales están incluidos.</li>
+            <li>Te llevas tu creación a casa, con indicaciones para cuidarla.</li>
+            <li>Ambiente tranquilo, con música suave y mucho mimo.</li>
+          </ul>
+          <p class="muted">La reserva se confirma una vez te enviemos los detalles de fecha, lugar y precio. Si no puedes asistir, avísanos con antelación y buscamos otra fecha.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reserva">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">Reserva o información</span>
+          <h2>Quiero apuntarme</h2>
+          <p>Déjanos tus datos y te contamos las próximas fechas, el precio y el lugar.</p>
+        </div>
+        <form class="form form-card reveal" data-form="Taller" novalidate>
+          <div class="hp" aria-hidden="true"><label for="tl-gotcha">No rellenar</label><input class="hp-input" type="text" id="tl-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="form-row">
+            <div><label for="tl-nombre">Nombre *</label><input type="text" id="tl-nombre" name="nombre" autocomplete="name" required></div>
+            <div><label for="tl-email">Correo electrónico *</label><input type="email" id="tl-email" name="email" autocomplete="email" required></div>
+          </div>
+          <div class="form-row">
+            <div><label for="tl-telefono">Teléfono</label><input type="tel" id="tl-telefono" name="telefono" autocomplete="tel"></div>
+            <div>
+              <label for="tl-solicitud">¿Qué necesitas? *</label>
+              <select id="tl-solicitud" name="solicitud" required>
+                <option>Reservar plaza</option>
+                <option>Solo información</option>
+                <option>Avisadme de nuevas fechas</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <label for="tl-taller">Taller *</label>
+              <select id="tl-taller" name="taller" required>
+                <option value="vela-aromatica">Tu vela aromática</option>
+                <option value="bouquet">Flores y bouquets de cera</option>
+                <option value="wax">Wax melts y sachets</option>
+                <option value="cualquiera">Cualquiera, me gustan todos</option>
+              </select>
+            </div>
+            <div><label for="tl-plazas">Número de plazas</label><input type="number" id="tl-plazas" name="plazas" min="1" max="20" value="1" inputmode="numeric"></div>
+          </div>
+          <div><label for="tl-mensaje">Comentarios</label><textarea id="tl-mensaje" name="mensaje" placeholder="Disponibilidad, preferencias de fecha, si venís en grupo…"></textarea></div>
+          <label class="checkbox"><input type="checkbox" name="privacidad" required> Acepto que Aloumiño use estos datos únicamente para responder a mi solicitud.</label>
+          <button class="btn" type="submit">Enviar</button>
+          <p class="form-status" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--cream section--tight">
+      <div class="container cta-band reveal">
+        <h2>¿Un taller solo para tu grupo?</h2>
+        <p>Cumpleaños, despedidas, equipos de empresa o celebraciones: organizamos talleres privados a medida.</p>
+        <a class="btn" href="eventos.html">Ver eventos y empresas</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>

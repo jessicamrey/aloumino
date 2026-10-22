@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Aloumiño</title>
+  <meta name="description" content="Escríbenos para pedidos, regalos personalizados, talleres o colaboraciones. Aloumiño, velas artesanales hechas a mano en Galicia.">
+  <meta property="og:title" content="Contacto · Aloumiño">
+  <meta property="og:image" content="assets/img/logo.jpg">
+  <meta name="theme-color" content="#fdfbf7">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/products.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body data-page="contacto">
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header" id="site-header"></header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Contacto</span>
+        <h1>Hablemos</h1>
+        <p class="lead">Para pedidos, dudas, regalos o simplemente para saludar. Leo cada mensaje con cariño y respondo lo antes posible.</p>
+      </div>
+    </section>
+
+    <section class="section" id="formulario">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2>Estamos aquí</h2>
+          <p class="muted">Normalmente respondemos en 24-48 horas laborables. Si tu consulta es sobre un pedido, envíanos la solicitud desde el formulario y te confirmaremos disponibilidad, envío y forma de pago.</p>
+          <ul class="contact-list">
+            <li data-config-wrap><span data-icon="mail"></span><a data-config-email></a></li>
+            <li data-config-wrap><span data-icon="instagram"></span><a data-config-instagram target="_blank" rel="noopener"></a></li>
+            <li data-config-wrap><span data-icon="tiktok"></span><a data-config-tiktok target="_blank" rel="noopener"></a></li>
+            <li data-config-wrap><span data-icon="whatsapp"></span><a data-config-whatsapp target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><span data-icon="pin"></span><span>Hecho a mano en Galicia · Envíos a toda España</span></li>
+          </ul>
+          <div class="card" style="background:var(--cream);box-shadow:none">
+            <h3>¿Tienes una duda rápida?</h3>
+            <p>Puede que ya esté resuelta en nuestras preguntas frecuentes: envíos, plazos, personalización y cuidado de las velas.</p>
+            <a class="link-arrow" href="faq.html">Ver preguntas frecuentes</a>
+          </div>
+        </div>
+
+        <form class="form form-card reveal" data-form="Contacto web" novalidate>
+          <h3>Escríbenos</h3>
+          <div class="hp" aria-hidden="true"><label for="ct-gotcha">No rellenar</label><input class="hp-input" type="text" id="ct-gotcha" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+          <div class="form-row">
+            <div><label for="ct-nombre">Nombre *</label><input type="text" id="ct-nombre" name="nombre" autocomplete="name" required></div>
+            <div><label for="ct-email">Correo electrónico *</label><input type="email" id="ct-email" name="email" autocomplete="email" required></div>
+          </div>
+          <div class="form-row">
+            <div><label for="ct-telefono">Teléfono</label><input type="tel" id="ct-telefono" name="telefono" autocomplete="tel"></div>
+            <div>
+              <label for="ct-motivo">Motivo *</label>
+              <select id="ct-motivo" name="motivo" required>
+                <option value="informacion">Información general</option>
+                <option value="pedido">Pedido de la tienda</option>
+                <option value="personalizado">Pedido personalizado o regalo</option>
+                <option value="taller">Talleres</option>
+                <option value="colaboracion">Colaboración profesional</option>
+                <option value="evento">Eventos y empresas</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div><label for="ct-cp">Código postal (para calcular el envío)</label><input type="text" id="ct-cp" name="codigo_postal" autocomplete="postal-code" inputmode="numeric"></div>
+            <div>
+              <label for="ct-entrega">Entrega</label>
+              <select id="ct-entrega" name="entrega">
+                <option>Envío a domicilio</option>
+                <option>Recogida en mano (a convenir)</option>
+              </select>
+            </div>
+          </div>
+          <div><label for="ct-mensaje">Mensaje *</label><textarea id="ct-mensaje" name="mensaje" rows="8" required></textarea></div>
+          <label class="checkbox"><input type="checkbox" name="privacidad" required> Acepto que Aloumiño use estos datos únicamente para responder a mi mensaje.</label>
+          <button class="btn" type="submit">Enviar mensaje</button>
+          <p class="form-status" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+</body>
+</html>
