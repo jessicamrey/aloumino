@@ -568,14 +568,24 @@
         const subject = `${form.dataset.form} · ${($("[name=nombre]", form) || {}).value || "Web Aloumiño"}`;
         const text = formToText(form);
 
-        if (CONFIG.formEndpoint) {
+        if (CONFIG.web3formsKey || CONFIG.formEndpoint) {
           btn.disabled = true;
           try {
             const data = new FormData(form);
-            data.append("_subject", subject);
-            data.append("_resumen", text);
-            const res = await fetch(CONFIG.formEndpoint, { method: "POST", body: data, headers: { Accept: "application/json" } });
-            if (!res.ok) throw new Error(res.status);
+            let url = CONFIG.formEndpoint;
+            if (CONFIG.web3formsKey) {
+              url = "https://api.web3forms.com/submit";
+              data.append("access_key", CONFIG.web3formsKey);
+              data.append("subject", subject);
+              data.append("from_name", "Web Aloumiño");
+              data.delete("_gotcha");
+            } else {
+              data.append("_subject", subject);
+            }
+            data.append("resumen", text);
+            const res = await fetch(url, { method: "POST", body: data, headers: { Accept: "application/json" } });
+            const json = await res.json().catch(() => ({}));
+            if (!res.ok || json.success === false) throw new Error(json.message || res.status);
             form.reset();
             if (form.dataset.order) Cart.clear();
             show("¡Grazas! Hemos recibido tu mensaje y te responderemos lo antes posible (normalmente en 24-48 h laborables).", true);
